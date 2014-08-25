@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  uniq_game_id: 1
+  bracket_id: 1
+  bracket_game_id: 1
+  team_1_id: 1
+  team_2_id: 1
+  winner: 1
+  in_bracket: false
+
+two:
+  id: 1
+  uniq_game_id: 2
+  bracket_id: 1
+  game_id: 2
+  team_1_id: 1
+  team_2_id: 1
+  winner: 1
+  in_bracket: false

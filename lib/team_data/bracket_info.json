@@ -1,0 +1,342 @@
+[
+  {
+    "pos": "1",
+    "seed": "1",
+    "team": "Florida"
+  },
+  {
+    "pos": "2a",
+    "seed": "16",
+    "team": "Albany"
+  },
+  {
+    "pos": "2b",
+    "seed":"16",
+    "team": "Mount St. Mary's"
+  },
+  {
+    "pos": "3",
+    "seed": "8",
+    "team": "Colorado"
+  },
+  {
+    "pos": "4",
+    "seed": "9",
+    "team": "Pittsburgh"
+  },
+  {
+    "pos": "5",
+    "seed": "5",
+    "team": "VCU"
+  },
+  {
+    "pos": "6",
+    "seed": "12",
+    "team": "Stephen F. Austin"
+  },
+  {
+    "pos": "7",
+    "seed": "4",
+    "team": "UCLA"
+  },
+  {
+    "pos": "8",
+    "seed": "13",
+    "team": "Tulsa"
+  },
+  {
+    "pos": "9",
+    "seed":"6",
+    "team": "Ohio St."
+  },
+  {
+    "pos": "10",
+    "seed": "11",
+    "team": "Dayton"
+  },
+  {
+    "pos": "11",
+    "seed": "3",
+    "team": "Syracuse"
+  },
+  {
+    "pos": "12",
+    "seed": "14",
+    "team": "Western Michigan"
+  },
+  {
+    "pos": "13",
+    "seed": "7",
+    "team": "New Mexico"
+  },
+  {
+    "pos": "14",
+    "seed": "10",
+    "team": "Stanford"
+  },
+  {
+    "pos": "15",
+    "seed": "2",
+    "team": "Kansas"
+  },
+  {
+    "pos": "16",
+    "seed": "15",
+    "team": "Eastern Kentucky"
+  },
+  {
+    "pos": "17",
+    "seed": "1",
+    "team": "Virginia"
+  },
+  {
+    "pos": "18",
+    "seed": "16",
+    "team": "Coastal Carolina"
+  },
+  {
+    "pos": "19",
+    "seed": "8",
+    "team": "Memphis"
+  },
+  {
+    "pos": "20",
+    "seed": "9",
+    "team": "George Washington"
+  },
+  {
+    "pos": "21",
+    "seed": "5",
+    "team": "Cincinnati"
+  },
+  {
+    "pos": "22",
+    "seed": "12",
+    "team": "Harvard"
+  },
+  {
+    "pos": "23",
+    "seed": "4",
+    "team": "Michigan St."
+  },
+  {
+    "pos": "24",
+    "seed": "13",
+    "team": "Delaware"
+  },
+  {
+    "pos": "25",
+    "seed": "6",
+    "team": "North Carolina"
+  },
+  {
+    "pos": "26",
+    "seed": "11",
+    "team": "Providence"
+  },
+  {
+    "pos": "27",
+    "seed": "3",
+    "team": "Iowa St."
+  },
+  {
+    "pos": "28",
+    "seed": "14",
+    "team": "North Carolina Central"
+  },
+  {
+    "pos": "29",
+    "seed": "7",
+    "team": "Connecticut"
+  },
+  {
+    "pos": "30",
+    "seed": "10",
+    "team": "Saint Joseph's"
+  },
+  {
+    "pos": "31",
+    "seed": "2",
+    "team": "Villanova"
+  },
+  {
+    "pos": "32",
+    "seed": "15",
+    "team": "Milwaukee"
+  },
+  {
+    "pos": "33",
+    "seed": "1",
+    "team": "Arizona"
+  },
+  {
+    "pos": "34",
+    "seed": "16",
+    "team": "Weber St."
+  },
+  {
+    "pos": "35",
+    "seed": "8",
+    "team": "Gonzaga"
+  },
+  {
+    "pos": "36",
+    "seed": "9",
+    "team": "Oklahoma St."
+  },
+  {
+    "pos": "37",
+    "seed": "5",
+    "team": "Oklahoma"
+  },
+  {
+    "pos": "38",
+    "seed": "12",
+    "team": "North Dakota St."
+  },
+  {
+    "pos": "39",
+    "seed": "4",
+    "team": "San Diego St."
+  },
+  {
+    "pos": "40",
+    "seed": "13",
+    "team": "New Mexico St."
+  },
+  {
+    "pos": "41",
+    "seed": "6",
+    "team": "Baylor"
+  },
+  {
+    "pos": "42",
+    "seed": "11",
+    "team": "Nebraska"
+  },
+  {
+    "pos": "43",
+    "seed": "3",
+    "team": "Creighton"
+  },
+  {
+    "pos": "44",
+    "seed": "14",
+    "team": "Louisiana Lafayette"
+  },
+  {
+    "pos": "45",
+    "seed": "7",
+    "team": "Oregon"
+  },
+  {
+    "pos": "46",
+    "seed": "10",
+    "team": "BYU"
+  },
+  {
+    "pos": "47",
+    "seed": "2",
+    "team": "Wisconsin"
+  },
+  {
+    "pos": "48",
+    "seed": "15",
+    "team": "American"
+  },
+  {
+    "pos": "49",
+    "seed": "1",
+    "team": "Wichita St."
+  },
+  {
+    "pos": "50a",
+    "seed": "16",
+    "team": "Cal Poly"
+  },
+  {
+    "pos": "50b",
+    "seed": "16",
+    "team": "Texas Southern"
+  },
+  {
+    "pos": "51",
+    "seed": "8",
+    "team": "Kentucky"
+  },
+  {
+    "pos": "52",
+    "seed": "9",
+    "team": "Kansas St."
+  },
+  {
+    "pos": "53",
+    "seed": "5",
+    "team": "Saint Louis"
+  },
+  {
+    "pos": "54a",
+    "seed": "12",
+    "team": "Xavier"
+  },
+  {
+    "pos": "54b",
+    "seed": "12",
+    "team": "North Carolina St."
+  },
+  {
+    "pos": "55",
+    "seed": "4",
+    "team": "Louisville"
+  },
+  {
+    "pos": "56",
+    "seed": "13",
+    "team": "Manhattan"
+  },
+  {
+    "pos": "57",
+    "seed": "6",
+    "team": "Massachusetts"
+  },
+  {
+    "pos": "58a",
+    "seed": "11",
+    "team": "Tennessee"
+  },
+  {
+    "pos": "58b",
+    "seed": "11",
+    "team": "Iowa"
+  },
+  {
+    "pos": "59",
+    "seed": "3",
+    "team": "Duke"
+  },
+  {
+    "pos": "60",
+    "seed": "14",
+    "team": "Mercer"
+  },
+  {
+    "pos": "61",
+    "seed": "7",
+    "team": "Texas"
+  },
+  {
+    "pos": "62",
+    "seed": "10",
+    "team": "Arizona St."
+  },
+  {
+    "pos": "63",
+    "seed": "2",
+    "team": "Michigan"
+  },
+  {
+    "pos": "64",
+    "seed": "15",
+    "team": "Wofford"
+  }
+]
