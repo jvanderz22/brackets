@@ -6,6 +6,7 @@ namespace :upload do
     upload_teams
     create_empty_games
     add_teams_to_games
+    upload_averages
   end
 
   desc "Upload scraped teams from json file in /app/assets/collected_data_whole_season.json"
@@ -23,8 +24,20 @@ namespace :upload do
     add_teams_to_games
   end
 
+  desc "Upload averages to the database"
+  task upload_averages: :environment do
+    upload_averages
+  end
+  
+  def upload_averages
+    file = "#{Rails.root}/app/assets/ncaa_averages.json"
+    file_content = File.read(file)
+    averages = JSON.parse(file_content)
+    Average.create!(averages)
+  end
+
   def upload_teams
-    file = "#{Rails.root}/app/assets/collected_data.json"
+    file = "#{Rails.root}/app/assets/collected_data_whole_season.json"
     file_content = File.read(file)
     teams = JSON.parse(file_content)
     teams.each do |name, team|

@@ -8,7 +8,6 @@ class TeamsController < ApplicationController
     @teams = Team.all
 
     respond_to do |format|
-      binding.pry
       format.html
       format.json { render json: @teams }
     end

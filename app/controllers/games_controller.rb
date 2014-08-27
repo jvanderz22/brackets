@@ -8,9 +8,9 @@ class GamesController < ApplicationController
 
   def index
     @games = Game.all
+    @averages = Average.first
     respond_to do |format|
-      format.html { render json: @games }
-      format.json { render json: @games }
+      format.json { render json: @games, meta: { averages:  @averages} }
     end
 
   end
@@ -18,9 +18,9 @@ class GamesController < ApplicationController
   # GET /games/1
   # GET /games/1.json
   def show
+    @averages = Average.first
     respond_to do |format|
-      format.html { render json: @game }
-      format.json { render json: @game }
+      format.json { render json: @game, meta: { averages: @averages} }
     end
   end
 

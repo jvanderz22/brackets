@@ -9,32 +9,32 @@
 <div class="row" style="text-align:center;">
   <div class="col-xs-4">
     {{#with team1}}
-    <div> {{school}} </div>
     <div> {{offEff}} </div>
     <div> {{defEff}} </div>
     <div> {{tempo}} </div>
-    <div> 98.3 </div>
-    <div> 2.32 </div>
-    <div> +3.2 </div>
+    <div> {{sos}} </div>
+    <div> {{experience}} </div>
+    <div> {{effectiveHeight}} </div>
     {{/with}}
   </div>
   <div class="col-xs-4">
-    <div> Offensive Effiency </div>
-    <div> Defensive Effiency </div>
-    <div> Tempo </div>
-    <div> Strength of Schedule </div>
-    <div> Experience </div>
-    <div> Effective Height </div>
+    {{#with average}}
+    <div> Offensive Effiency ({{eff}}) </div>
+    <div> Defensive Effiency ({{eff}})</div>
+    <div> Tempo ({{tempo}}) </div>
+    <div> Strength of Schedule ({{sos}}) </div>
+    <div> Experience ({{experience}}) </div>
+    <div> Effective Height ({{effective_height}}) </div>
+    {{/with}}
   </div>
   <div class="col-xs-4">
     {{#with team2}}
-    <div> {{school}} </div>
     <div> {{offEff}} </div>
     <div> {{defEff}} </div>
     <div> {{tempo}} </div>
-    <div> 103.1 </div>
-    <div> 3.32 </div>
-    <div> -0.2 </div>
+    <div> {{sos}} </div>
+    <div> {{experience}} </div>
+    <div> {{effectiveHeight}} </div>
     {{/with}}
   </div>
 </div>
@@ -48,7 +48,7 @@
   </div>
   <div class="col-xs-4">
     <h4> &nbsp; </h4>
-    {{stat-categories}}
+    {{stat-categories average=average}}
   </div>
   <div class="col-xs-4">
     <h4> Defense </h4>
@@ -63,7 +63,7 @@
   </div>
   <div class="col-xs-4">
     <h4> &nbsp;</h4>
-    {{stat-categories}}
+    {{stat-categories average=average}}
   </div>
   <div class="col-xs-4">
     <h4> Offense </h4>
@@ -71,7 +71,7 @@
   </div>
 </div>
 
-<div class="row" style="text-align:center;">
+<div class="row" style="text-align:center; padding-top:10px;">
   <div class="col-xs-4"> <button {{action pickWinner team1}}> Pick Team 1 </button></div>
   <div class="col-xs-4"></div>
   <div class="col-xs-4"> <button {{action pickWinner team2 }}> Pick Team 2 </button></div>

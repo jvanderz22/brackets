@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Kenpom</title>
-  <%= stylesheet_link_tag 'application', media: 'all'  %>
-  <%= javascript_include_tag 'application' %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-<div id="ember-app"> </div>
-</body>
+  <head>
+    <title>Blind KenPom</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body style="background-color:#8E603E">
+    <div id="ember-app"> </div>
+    <%= yield %>
+ </body>
 </html>
+

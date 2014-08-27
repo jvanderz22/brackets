@@ -1,11 +1,18 @@
 App.GameController = Ember.ObjectController.extend
+  average: ( ->
+    @store.metadataFor('game').averages
+  ).property('content')
+
   randomFirst: ( ->
     Math.floor(Math.random() * 2)
   ).property('content')
+
   randomSecond: ->
     if @get('randomFirst') == 1 then 0 else 1
+
   team1: Ember.computed 'teams', ->
     @get("teams").objectAt(@get('randomFirst'))
+
   team2:  Ember.computed 'teams', ->
     @get("teams").objectAt(@randomSecond())
 

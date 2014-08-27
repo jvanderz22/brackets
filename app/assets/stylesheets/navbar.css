@@ -1,0 +1,12 @@
+.navbar.navbar-custom {
+  border-radius: 0px;
+  background-color: black;
+  color: grey;
+  margin-bottom: 0px;
+}
+
+.navbar-text.custom-navbar-text strong {
+   color: red;
+}
+
+

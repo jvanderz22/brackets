@@ -11,10 +11,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140818235245) do
+ActiveRecord::Schema.define(version: 20140825234251) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "averages", force: true do |t|
+    t.string   "eff"
+    t.string   "tempo"
+    t.string   "efg"
+    t.string   "turnover"
+    t.string   "reb"
+    t.string   "fta_rate"
+    t.string   "three_point_pct"
+    t.string   "two_point_pct"
+    t.string   "ft_pct"
+    t.string   "block_pct"
+    t.string   "steal_pct"
+    t.string   "three_pa_per_fga"
+    t.string   "assist_rate"
+    t.string   "three_point_dist"
+    t.string   "two_point_dist"
+    t.string   "ft_point_dist"
+    t.string   "sos"
+    t.string   "bench_minutes"
+    t.string   "experience"
+    t.string   "effective_height"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "games", force: true do |t|
     t.integer  "uniq_game_id"

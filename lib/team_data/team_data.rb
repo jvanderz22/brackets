@@ -7,11 +7,14 @@ class TeamData
     @uri = uri
     @data = {}
     @teams = JSON.parse(IO.read("#{Rails.root}/lib/team_data/bracket_info.json"))
-    binding.pry
+  #  puts "Enter Kenpom Email"
+    @email = 'jvanderz@umich.edu'
+   # puts "Enter Kenpom Password"
+    @password = 'wolverines123'
+    @driver = Selenium::WebDriver.for :firefox
   end
 
   def scrape
-    @driver = Selenium::WebDriver.for :firefox
     sign_in
     get_teams_data
     @driver.quit
@@ -27,11 +30,9 @@ class TeamData
   end
 
   def sign_in
-    email = "jvanderz@umich.edu"
-    password = "wolverines123"
     @driver.navigate.to(@uri)
-    @driver.find_element(:name, "email").send_keys(email)
-    @driver.find_element(:name, "password").send_keys(password)
+    @driver.find_element(:name, "email").send_keys(@email)
+    @driver.find_element(:name, "password").send_keys(@password)
     @driver.find_element(:name, "submit").click
   end
 
@@ -80,12 +81,16 @@ class TeamData
       off_2_point_dist: match_value(team_data_string, "RankOff_2"),
       def_2_point_dist: match_value(team_data_string, "RankDef_2"),
       off_ft_point_dist: match_value(team_data_string, "RankOff_1"),
-      def_ft_point_dist: match_value(team_data_string, "RankDef_1")
+      def_ft_point_dist: match_value(team_data_string, "RankDef_1"),
+      sos: find_num_in_HTML(team_data_string, "RankSOSPythag"),
+      bench_minutes: find_num_in_HTML(team_data_string, "BenchRank"),
+      experience: find_num_in_HTML(team_data_string, "ExpRank"),
+      effective_height: find_num_in_HTML(team_data_string, "HgtEffRank")
     }
   end
 
   def navigate_home
-    @driver.find_element(:css, 'a[href="."]').click
+    @driver.find_element(:css, 'a[href="/"]').click
   end
 
   def navigate_to_team(team_name)
@@ -109,4 +114,9 @@ class TeamData
     end
   end
 
+  def find_num_in_HTML(data_string, match_string)
+    length = match_string.length
+    data_pos = data_string.index(match_string)
+    data_string[data_pos, length + 10].match(/((\+*)(-*)(\d*)\.(\d+))/)[0]
+  end
 end

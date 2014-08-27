@@ -1,0 +1,93 @@
+<%= form_for(@average) do |f| %>
+  <% if @average.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@average.errors.count, "error") %> prohibited this average from being saved:</h2>
+
+      <ul>
+      <% @average.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :eff %><br>
+    <%= f.text_field :eff %>
+  </div>
+  <div class="field">
+    <%= f.label :efg %><br>
+    <%= f.text_field :efg %>
+  </div>
+  <div class="field">
+    <%= f.label :turnover %><br>
+    <%= f.text_field :turnover %>
+  </div>
+  <div class="field">
+    <%= f.label :reb %><br>
+    <%= f.text_field :reb %>
+  </div>
+  <div class="field">
+    <%= f.label :fta_rate %><br>
+    <%= f.text_field :fta_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :three_point_pct %><br>
+    <%= f.text_field :three_point_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :two_point_pct %><br>
+    <%= f.text_field :two_point_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :ft_pct %><br>
+    <%= f.text_field :ft_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :block_pct %><br>
+    <%= f.text_field :block_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :steal_pct %><br>
+    <%= f.text_field :steal_pct %>
+  </div>
+  <div class="field">
+    <%= f.label :three_pa_per_fga %><br>
+    <%= f.text_field :three_pa_per_fga %>
+  </div>
+  <div class="field">
+    <%= f.label :assist_rate %><br>
+    <%= f.text_field :assist_rate %>
+  </div>
+  <div class="field">
+    <%= f.label :three_point_dist %><br>
+    <%= f.text_field :three_point_dist %>
+  </div>
+  <div class="field">
+    <%= f.label :two_point_dist %><br>
+    <%= f.text_field :two_point_dist %>
+  </div>
+  <div class="field">
+    <%= f.label :ft_point_dist %><br>
+    <%= f.text_field :ft_point_dist %>
+  </div>
+  <div class="field">
+    <%= f.label :sos %><br>
+    <%= f.text_field :sos %>
+  </div>
+  <div class="field">
+    <%= f.label :bench_minutes %><br>
+    <%= f.text_field :bench_minutes %>
+  </div>
+  <div class="field">
+    <%= f.label :experience %><br>
+    <%= f.text_field :experience %>
+  </div>
+  <div class="field">
+    <%= f.label :effective_height %><br>
+    <%= f.text_field :effective_height %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

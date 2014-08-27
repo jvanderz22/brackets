@@ -12,5 +12,7 @@
  *
  *= require_tree .
  *= require_self
+ *= require ember-app-container
  *= require jquery.bracket.min
+ *= require navbar
  */

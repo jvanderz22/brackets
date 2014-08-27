@@ -1,0 +1,43 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  eff: MyString
+  efg: MyString
+  turnover: MyString
+  reb: MyString
+  fta_rate: MyString
+  three_point_pct: MyString
+  two_point_pct: MyString
+  ft_pct: MyString
+  block_pct: MyString
+  steal_pct: MyString
+  three_pa_per_fga: MyString
+  assist_rate: MyString
+  three_point_dist: MyString
+  two_point_dist: MyString
+  ft_point_dist: MyString
+  sos: MyString
+  bench_minutes: MyString
+  experience: MyString
+  effective_height: MyString
+
+two:
+  eff: MyString
+  efg: MyString
+  turnover: MyString
+  reb: MyString
+  fta_rate: MyString
+  three_point_pct: MyString
+  two_point_pct: MyString
+  ft_pct: MyString
+  block_pct: MyString
+  steal_pct: MyString
+  three_pa_per_fga: MyString
+  assist_rate: MyString
+  three_point_dist: MyString
+  two_point_dist: MyString
+  ft_point_dist: MyString
+  sos: MyString
+  bench_minutes: MyString
+  experience: MyString
+  effective_height: MyString

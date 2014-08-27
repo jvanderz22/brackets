@@ -17,7 +17,6 @@ App.TeamSerializer = App.ApplicationSerializer.extend(
 
 
 
-
 App.GameSerializer = App.ApplicationSerializer.extend
   normalizeHash:
     game: (hash) ->

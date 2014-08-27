@@ -3,8 +3,12 @@
 App.Router.reopen
   rootURL: '/'
 
+App.IndexRoute = Ember.Route.extend
+  redirect: ->
+    @transitionTo('games')
 
 App.Router.map ()->
+    
     @resource('games', ->
       @resource('game', { path: ':id'}, -> )
     )

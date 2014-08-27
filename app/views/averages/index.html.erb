@@ -1,0 +1,61 @@
+<h1>Listing averages</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Eff</th>
+      <th>Efg</th>
+      <th>Turnover</th>
+      <th>Reb</th>
+      <th>Fta rate</th>
+      <th>Three point pct</th>
+      <th>Two point pct</th>
+      <th>Ft pct</th>
+      <th>Block pct</th>
+      <th>Steal pct</th>
+      <th>Three pa per fga</th>
+      <th>Assist rate</th>
+      <th>Three point dist</th>
+      <th>Two point dist</th>
+      <th>Ft point dist</th>
+      <th>Sos</th>
+      <th>Bench minutes</th>
+      <th>Experience</th>
+      <th>Effective height</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @averages.each do |average| %>
+      <tr>
+        <td><%= average.eff %></td>
+        <td><%= average.efg %></td>
+        <td><%= average.turnover %></td>
+        <td><%= average.reb %></td>
+        <td><%= average.fta_rate %></td>
+        <td><%= average.three_point_pct %></td>
+        <td><%= average.two_point_pct %></td>
+        <td><%= average.ft_pct %></td>
+        <td><%= average.block_pct %></td>
+        <td><%= average.steal_pct %></td>
+        <td><%= average.three_pa_per_fga %></td>
+        <td><%= average.assist_rate %></td>
+        <td><%= average.three_point_dist %></td>
+        <td><%= average.two_point_dist %></td>
+        <td><%= average.ft_point_dist %></td>
+        <td><%= average.sos %></td>
+        <td><%= average.bench_minutes %></td>
+        <td><%= average.experience %></td>
+        <td><%= average.effective_height %></td>
+        <td><%= link_to 'Show', average %></td>
+        <td><%= link_to 'Edit', edit_average_path(average) %></td>
+        <td><%= link_to 'Destroy', average, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Average', new_average_path %>
