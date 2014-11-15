@@ -14,16 +14,9 @@ App.Router.map ()->
     @resource('teams')
     @resource('bracket')
 
-App.GamesRoute = Ember.Route.extend
-  model: ->
-    @store.findAll 'game'
 
-  #afterModel: (games, transition) ->
-  # @controllerFor('games').changeGame()
-  #setupController: (controller, model) ->
-  # @_super(controller, model)
-  # navbarController = @controllerFor("navbar")
-  # navbarController.set("games", @model())
+App.GamesRoute = Ember.Route.extend
+  model: -> @store.find 'game'
 
 App.GameRoute = Ember.Route.extend
   model: (params) ->
@@ -33,10 +26,4 @@ App.TeamsRoute = Ember.Route.extend
   model: -> @store.find 'team'
 
 App.BracketRoute = Ember.Route.extend
-  afterModel: (games, transition) ->
-    if games.filterBy('isAvailable').length > 0 || games.get('content.length') != 127
-      @transitionTo('games')
-
-  model: ->
-    @store.find 'game'
-
+  model: -> @store.find 'game'
