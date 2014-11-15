@@ -7,7 +7,3 @@ json.linked do
     json.partial! 'teams/team', team: team
   end
 end
-
-json.meta do
-  json.averages @averages
-end
