@@ -8,7 +8,6 @@ class TeamsController < ApplicationController
   # GET /teams.json
   def index
     @teams = Team.all
-    binding.pry
     respond_to do |format|
       format.json { render json: @teams }
     end
