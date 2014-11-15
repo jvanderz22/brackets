@@ -8,10 +8,7 @@ App.ApplicationSerializer = DS.RESTSerializer.extend
   normalizePayload: (payload) ->
     for key, value of payload.linked
       payload[key] = value
-    for key, value of payload.meta
-      payload[key] = value
     delete payload.linked if payload.linked?
-    delete payload.meta if payload.meta?
     payload
 
 App.TeamSerializer = App.ApplicationSerializer.extend(
@@ -31,6 +28,6 @@ App.GameSerializer = App.ApplicationSerializer.extend
       delete hash.team_ids
       return hash
     games: (hash) ->
-      hash.teams = hash.teams_ids
-      delete hash.team_ids
-      return hash
+     hash.teams = hash.team_ids
+     delete hash.team_ids
+     return hash
