@@ -79,6 +79,7 @@ namespace :upload do
   def add_teams_to_games
     teams = Team.all
     teams.each do |team|
+      puts team
       add_team_to_game(team)
     end
   end
