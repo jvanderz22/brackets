@@ -1,4 +1,10 @@
 App.BracketController = Ember.ArrayController.extend
+  transitionToGames: ( ->
+    games = @get('content.content')
+    if games?.filterBy('isAvailable').length > 0 || games?.length != 127
+      @transitionToRoute('games')
+  ).on('init').observes('content')
+
   _orderedInBracketGames: (games) ->
     inBracketGames = games.filterBy('inBracket', true)
     inBracketGames.sortBy('bracketId', 'bracketGameId')
@@ -31,11 +37,11 @@ App.BracketController = Ember.ArrayController.extend
       @_mappedTeams(game.get('teams'), game.get('winnerId'))
 
    teams: ( ->
-    allGames = @get('content')
+    allGames = @get('content.content')
     orderedGames = @_orderedInBracketGames(allGames)
     secondRoundGames = @_gamesBetween(orderedGames, 16, 23)
     @_mappedGames(secondRoundGames)
-  ).property('content')
+  ).property('content.isLoaded')
 
   _gameResults: (game) ->
     winnerPos = parseInt(game.get('winnerId').get('pos'))
@@ -61,7 +67,7 @@ App.BracketController = Ember.ArrayController.extend
 
   results: ( ->
     allResults = []
-    allGames = @get('content')
+    allGames = @get('content.content')
     orderedGames = @_orderedInBracketGames(allGames)
     @_allGameResults(orderedGames)
   ).property('content')
