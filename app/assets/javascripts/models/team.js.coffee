@@ -3,7 +3,7 @@
 App.Team = DS.Model.extend
   pos: DS.attr 'string'
   gameId: DS.belongsTo 'game' , { inverse: 'teams' }
-  gameIds: DS.hasMany 'games', { inverse: 'winnerId' }
+  gamesWonIds: DS.hasMany 'games', { inverse: 'winnerId' }
   seed: DS.attr 'number'
   school: DS.attr 'string'
   offEff: DS.attr 'string'

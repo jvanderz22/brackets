@@ -6,7 +6,7 @@ App.Game = DS.Model.extend
   bracketId: DS.attr 'number'
   bracketGameId: DS.attr 'number'
   teams: DS.hasMany 'team', { inverse: 'gameId' }
-  winnerId: DS.belongsTo 'team', { inverse: 'gameIds' }
+  winnerId: DS.belongsTo 'team', { inverse: 'gamesWonIds' }
   inBracket: DS.attr 'boolean'
   isAvailable: Ember.computed 'teams', 'winnerId', ->
     @get('teams').content.length == 2 && @get('winnerId') == null
