@@ -8,18 +8,19 @@ class TeamsController < ApplicationController
   # GET /teams.json
   def index
     @teams = Team.all
-    respond_to do |format|
-      format.json { render json: @teams }
-    end
+    @games = Game.all
+    #respond_to do |format|
+     # format.json { render json: @teams }
+    #end
   end
 
   # GET /teams/1
   # GET /teams/1.json
   def show
-    @teams = Team.find(params[:id].split(','))
-    respond_to do |format|
-      format.json { render json: @teams }
-    end
+    @team = Team.find(params[:id])
+    @games = @team.game_ids.map do |game_id|
+      Game.find(game_id)
+    end.push(Game.find(@team.game_id))
   end
 
   # PATCH/PUT /teams/1
@@ -27,22 +28,10 @@ class TeamsController < ApplicationController
   def update
     respond_to do |format|
       if @team.update(team_params)
-        format.html { redirect_to @team, notice: 'Team was successfully updated.' }
         format.json { render :show, status: :ok, location: @team }
       else
-        format.html { render :edit }
         format.json { render json: @team.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /teams/1
-  # DELETE /teams/1.json
-  def destroy
-    @team.destroy
-    respond_to do |format|
-      format.html { redirect_to teams_url, notice: 'Team was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

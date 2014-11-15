@@ -1,5 +1,13 @@
-json.array!(@games) do |game|
-  binding.pry
-  json.extract! game, :id, :id, :uniq_game_id, :bracket_id, :bracket_game_id, :teams, :winner_id, :in_bracket
-  json.url game_url(game, format: :json)
+json.games @games do |game|
+  json.partial! 'games/game', game: game
+end
+
+json.linked do
+  json.teams @teams do |team|
+    json.partial! 'teams/team', team: team
+  end
+end
+
+json.meta do
+  json.averages @averages
 end

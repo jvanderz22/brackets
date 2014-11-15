@@ -8,37 +8,18 @@ class GamesController < ApplicationController
 
   def index
     @games = Game.all
-    binding.pry
     @averages = Average.first
-    respond_to do |format|
-      format.json { render json: @games, meta: { averages:  @averages} }
-    end
-
+    @teams = Team.all
   end
 
   # GET /games/1
   # GET /games/1.json
   def show
     @averages = Average.first
-    respond_to do |format|
-      format.json { render json: @game, meta: { averages: @averages} }
-    end
-  end
-
-  # POST /games
-  # POST /games.json
-  def create
-    @game = Game.new(game_params)
-
-    respond_to do |format|
-      if @game.save
-        format.html { redirect_to @game, notice: 'Game was successfully created.' }
-        format.json { render :show, status: :created, location: @game }
-      else
-        format.html { render :new }
-        format.json { render json: @game.errors, status: :unprocessable_entity }
-      end
-    end
+    @teams = @game.team_ids.map { |team_id| Team.find(team_id) }
+    #    respond_to do |format|
+ #     format.json { render json: @game, meta: { averages: @averages} }
+  #  end
   end
 
   # PATCH/PUT /games/1
