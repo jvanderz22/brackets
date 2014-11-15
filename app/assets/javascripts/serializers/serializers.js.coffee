@@ -17,7 +17,7 @@ App.ApplicationSerializer = DS.RESTSerializer.extend
 App.TeamSerializer = App.ApplicationSerializer.extend(
   normalizeHash:
     teams: (hash) ->
-      hash.games = hash.games_ids
+      hash.games = hash.games_won_ids
       delete hash.games_won_ids
       return hash
 )
