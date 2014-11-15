@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   patch 'games/:id'    => 'games#update'
 
   get 'teams'      => 'teams#index'
-  get 'teams/id'   => 'teams#show'
+  get 'teams/:id'   => 'teams#show'
 
   get 'averages'   => 'averages#show'
 
