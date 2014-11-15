@@ -1,5 +1,5 @@
 App.NavbarController = Ember.Controller.extend
-  needs: "gamesIndex"
+  needs: "games"
   inBracketGames: Ember.computed.filterBy("games", "inBracket", true)
 
   totalGames: ( ->

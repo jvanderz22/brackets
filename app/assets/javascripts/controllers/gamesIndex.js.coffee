@@ -1,5 +1,5 @@
-App.GamesIndexController = Ember.ArrayController.extend
-   changeGame: ( ->
+App.GamesController = Ember.ArrayController.extend
+  changeGame: ( ->
     games = @get('content').filterBy('isAvailable', true)
     index = Math.floor(Math.random() * games.length)
     randomGame = games.objectAt(index)

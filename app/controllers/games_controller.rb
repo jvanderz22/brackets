@@ -8,6 +8,7 @@ class GamesController < ApplicationController
 
   def index
     @games = Game.all
+    binding.pry
     @averages = Average.first
     respond_to do |format|
       format.json { render json: @games, meta: { averages:  @averages} }
@@ -22,15 +23,6 @@ class GamesController < ApplicationController
     respond_to do |format|
       format.json { render json: @game, meta: { averages: @averages} }
     end
-  end
-
-  # GET /games/new
-  def new
-    @game = Game.new
-  end
-
-  # GET /games/1/edit
-  def edit
   end
 
   # POST /games
@@ -55,26 +47,14 @@ class GamesController < ApplicationController
     respond_to do |format|
       if @game.update(game_params)
         if  @game.winner_id == game_params["winner_id"]
-          format.html { redirect_to @game, notice: 'Game was successfully updated.' }
           format.json { render json: @game, status: :ok, location: @game }
         else
           update_records(@game, game_params)
           format.json { render json: @game, status: :created, location: @game }
         end
       else
-        format.html { render :edit }
         format.json { render json: @game.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # DELETE /games/1
-  # DELETE /games/1.json
-  def destroy
-    @game.destroy
-    respond_to do |format|
-      format.html { redirect_to games_url, notice: 'Game was successfully destroyed.' }
-      format.json { head :no_content }
     end
   end
 

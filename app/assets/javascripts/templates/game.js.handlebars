@@ -9,12 +9,42 @@
 <div class="row" style="text-align:center;">
   <div class="col-xs-4">
     {{#with team1}}
-    <div> {{offEff}} </div>
-    <div> {{defEff}} </div>
-    <div> {{tempo}} </div>
-    <div> {{sos}} </div>
-    <div> {{experience}} </div>
-    <div> {{effectiveHeight}} </div>
+    <div class="stat-row">
+      {{#view 'stat' rank=offEffRank}}
+        <span class="stat"> {{offEff}} </span>
+        <span class="rank"> {{offEffRank}} </span>
+      {{/view}}
+    </div>
+    <div class="stat-row">
+      {{#view 'stat' rank=defEffRank}}
+        <span class="stat"> {{defEff}} </span>
+        <span class="rank"> {{defEffRank}} </span>
+      {{/view}}
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless">
+        <span class="stat"> {{tempo}} </span>
+        <span class="rank"> {{tempoRank}} </span>
+      </span>
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless">
+        <span class="stat"> {{sos}} </span>
+        <span class="rank"> {{sosRank}} </span>
+      </span>
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless">
+        <span class="stat"> {{experience}} </span>
+        <span class="rank"> {{experienceRank}} </span>
+      </span>
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless styled-stat-box-bottom">
+        <span class="stat"> {{effectiveHeight}} </span>
+        <span class="rank"> {{effectiveHeightRank}} </span>
+      </span>
+    </div>
     {{/with}}
   </div>
   <div class="col-xs-4">
@@ -29,12 +59,42 @@
   </div>
   <div class="col-xs-4">
     {{#with team2}}
-    <div> {{offEff}} </div>
-    <div> {{defEff}} </div>
-    <div> {{tempo}} </div>
-    <div> {{sos}} </div>
-    <div> {{experience}} </div>
-    <div> {{effectiveHeight}} </div>
+    <div class="stat-row">
+      {{#view 'stat' rank=offEffRank}}
+        <span class="stat"> {{offEff}} </span>
+        <span class="rank"> {{offEffRank}} </span>
+      {{/view}}
+    </div>
+    <div class="stat-row">
+      {{#view 'stat' rank=defEffRank}}
+        <span class="stat"> {{defEff}} </span>
+        <span class="rank"> {{defEffRank}} </span>
+      {{/view}}
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless">
+        <span class="stat"> {{tempo}} </span>
+        <span class="rank"> {{tempoRank}} </span>
+      </span>
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless">
+        <span class="stat"> {{sos}} </span>
+        <span class="rank"> {{sosRank}} </span>
+      </span>
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless">
+        <span class="stat"> {{experience}} </span>
+        <span class="rank"> {{experienceRank}} </span>
+      </span>
+    </div>
+    <div class="stat-row">
+      <span class="styled-stat-box styled-stat-box-colorless styled-stat-box-bottom">
+        <span class="stat"> {{effectiveHeight}} </span>
+        <span class="rank"> {{effectiveHeightRank}} </span>
+      </span>
+    </div>
     {{/with}}
   </div>
 </div>

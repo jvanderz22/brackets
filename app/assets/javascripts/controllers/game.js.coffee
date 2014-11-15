@@ -1,4 +1,6 @@
 App.GameController = Ember.ObjectController.extend
+  needs: ['games']
+
   average: ( ->
     @store.metadataFor('game').averages
   ).property('content')
@@ -23,7 +25,7 @@ App.GameController = Ember.ObjectController.extend
       game.save().then((data) =>
         data.get('winnerId').reload().then((data) =>
           data.get('gameId').reload().then((data) =>
-            @transitionToRoute("games")
+            @controllerFor('games').changeGame()
           )
         )
      )

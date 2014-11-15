@@ -1,20 +1,90 @@
 {{#with team}}
 <div> <h4> &nbsp; </h4> </div>
-<div> {{defEfg}} </div>
-<div> {{defTurnover}} </div>
-<div> {{defReb}} </div>
-<div> {{defFtaRate}} </div>
+<div class="stat-row">
+  {{#view 'stat' rank=defEfgRank}}
+    <span class="stat"> {{defEfg}} </span>
+    <span class="rank"> {{defEfgRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defTurnoverRank}}
+    <span class="stat"> {{defTurnover}} </span>
+    <span class="rank"> {{defTurnoverRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defRebRank}}
+    <span class="stat"> {{defReb}} </span>
+    <span class="rank"> {{defRebRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defFtaRateRank bottom=true}}
+    <span class="stat"> {{defFtaRate}} </span>
+    <span class="rank"> {{defFtaRateRank}} </span>
+   {{/view}}
+</div>
 <div> <h4> &nbsp; </h4>  </div>
-<div> {{defThreePointPct}}</div>
-<div> {{defTwoPointPct}} </div>
-<div> {{defFtPct}} </div>
-<div> {{defBlockPct}} </div>
-<div> {{defStealPct}} </div>
+<div class="stat-row">
+  {{#view 'stat' rank=defThreePointPctRank}}
+    <span class="stat"> {{defThreePointPct}} </span> 
+    <span class="rank"> {{defThreePointPctRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defTwoPointPctRank}}
+    <span class="stat"> {{defTwoPointPct}} </span>
+    <span class="rank"> {{defTwoPointPctRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defFtPctRank}}
+    <span class="stat"> {{defFtPct}} </span>
+    <span class="rank"> {{defFtPctRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defBlockPctRank}}
+    <span class="stat"> {{defBlockPct}} </span>
+    <span class="rank"> {{defBlockPctRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defStealPctRank bottom=true}}
+    <span class="stat"> {{defStealPct}} </span>
+    <span class="rank"> {{defStealPctRank}} </span>
+  {{/view}}
+</div>
 <div> <h4> &nbsp; </h4> </div>
-<div> {{def3paPerFga}} </div>
-<div> {{defAssistRate}} </div>
+<div class="stat-row">
+  {{#view 'stat' rank=def3paPerFgaRank}}
+    <span class="stat"> {{def3paPerFga}} </span>
+    <span class="rank"> {{def3paPerFgaRank}} </span>
+  {{/view}}
+</div>
+<div class="stat-row">
+  {{#view 'stat' rank=defAssistRateRank bottom=true}}
+    <span class="stat"> {{defAssistRate}} </span>
+    <span class="rank"> {{defAssistRateRank}} </span>
+  {{/view}}
+</div>
 <div> <h4> &nbsp; </h4> </div>
-<div> {{def3PointDist}} </div>
-<div> {{def2PointDist}} </div>
-<div> {{defFtPointDist}} </div>
+<div class="stat-row">
+  <span class="styled-stat-box styled-stat-box-colorless">
+    <span class="stat"> {{def3PointDist}} </span>
+    <span class="rank"> {{def3PointDistRank}} </span>
+  </span>
+</div>
+<div class="stat-row">
+  <span class="styled-stat-box styled-stat-box-colorless">
+    <span class="stat"> {{def2PointDist}} </span>
+    <span class="rank"> {{def2PointDistRank}} </span>
+  </span>
+</div>
+<div class="stat-row">
+  <span class="styled-stat-box styled-stat-box-colorless styled-stat-box-bottom">
+    <span class="stat"> {{defFtPointDist}} </span>
+    <span class="rank"> {{defFtPointDistRank}} </span>
+  </span>
+</div>
 {{/with}}
