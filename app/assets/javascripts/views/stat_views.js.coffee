@@ -37,7 +37,5 @@ App.StatView = Ember.View.extend
     hexRed = addZeroToHex(red, hexRed)
     hexGreen = addZeroToHex(green, hexGreen)
     hexBlue = addZeroToHex(blue, hexBlue)
-    color = "background-color: #" + "#{hexRed}#{hexGreen}#{hexBlue}"
-    console.log(color)
-    color
+    "background-color: #" + "#{hexRed}#{hexGreen}#{hexBlue}"
   ).property('rank')
