@@ -25,7 +25,7 @@ class GamesController < BaseController
 
     def set_additional_show_resources
       @teams = @game.team_ids.map { |team_id| Team.find(team_id) }
-      @teams.push(Team.find(@game.winner_id))
+      @teams.push(Team.find(@game.winner_id)) unless @game.winner_id.nil?
     end
 
     def update_records(game_params)
