@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   get 'games'   => 'games#index'
   get 'games/:id'      => 'games#show'
 

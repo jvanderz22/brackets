@@ -50,6 +50,8 @@ gem 'uuidtools'
 
 gem 'pry'
 
+gem 'devise'
+
 gem 'nokogiri'
 gem 'selenium-webdriver'
 
