@@ -16,4 +16,5 @@
  *= require jquery.bracket.min
  *= require navbar
  *= require game-styles
+ *= require_directoty bootstrap
  */

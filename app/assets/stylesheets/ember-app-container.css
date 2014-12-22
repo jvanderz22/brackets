@@ -3,5 +3,7 @@
   margin-bottom: 0px;
   padding: 50px 10px;
   background-color: #F2FAFD;
-  border: 5px solid #444444;
+  border-style: solid;
+  border-color: #444444;
+  border-width: 0px 5px 5px 5px;
 }
