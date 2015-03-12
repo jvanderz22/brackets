@@ -1,7 +1,8 @@
 App.BracketController = Ember.ArrayController.extend
   transitionToGames: ( ->
     games = @get('content.content')
-    if games?.filterBy('isAvailable').length > 0 || games?.length != 127
+    return if games is null or games is undefined
+    if games.filterBy('isAvailable').length > 0 || games.length != 127
       @transitionToRoute('games')
   ).on('init').observes('content')
 

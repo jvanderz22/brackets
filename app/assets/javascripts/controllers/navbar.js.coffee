@@ -3,9 +3,6 @@ App.NavbarController = Ember.Controller.extend
   games: Ember.computed.alias 'controllers.games.content'
   inBracketGames: Ember.computed.filterBy("games", "inBracket", true)
 
-  update: ( ->
-    @set('games', @get('controllers.games.content'))
-  ).observes('controllers.games.content.[]')
 
   totalGames: ( ->
     @get("inBracketGames").length
@@ -14,7 +11,7 @@ App.NavbarController = Ember.Controller.extend
   gamesWithWinners: ( ->
     @get("inBracketGames").filter (game) ->
       not (game.get("winnerId") == null || game.get("winnerId") == undefined)
-  ).property("inBracketGames", 'games.content.[]')
+  ).property("inBracketGames", 'games.[]')
 
   gamesPicked: ( ->
     @get("gamesWithWinners").length
