@@ -7,11 +7,9 @@ class TeamData
     @uri = uri
     @data = {}
     @teams = JSON.parse(IO.read("#{Rails.root}/lib/team_data/bracket_info.json"))
-  #  puts "Enter Kenpom Email"
     @email = 'jvanderz@umich.edu'
-   # puts "Enter Kenpom Password"
     @password = 'wolverines123'
-    @driver = Selenium::WebDriver.for :firefox
+    @driver = Selenium::WebDriver.for :chrome
   end
 
   def scrape

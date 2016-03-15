@@ -8,7 +8,7 @@ class Averages
     @data = {}
     @email = 'jvanderz@umich.edu'
     @password = 'wolverines123'
-    @driver = Selenium::WebDriver.for :firefox
+    @driver = Selenium::WebDriver.for :chrome
   end
 
   def scrape
