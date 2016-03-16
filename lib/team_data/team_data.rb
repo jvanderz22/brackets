@@ -150,7 +150,7 @@ class TeamData
   def match_value(match_string)
     team_data_string.split("function tableStart()")[-1].match(match_regex(match_string))[1]
   rescue
-    "Data not found for #{match_string}"
+    raise "Data not found for #{match_string}"
   end
 
   def rank_regex(category)
@@ -162,7 +162,7 @@ class TeamData
     matched_data = whole_season_data_string.match(rank_regex(match_string)).to_s
     matched_data.match(/seed.*/).to_s.match(/(\d+)/).to_s
   rescue
-    "Rank not found for #{match_string}"
+    raise "Rank not found for #{match_string}"
   end
 
   def match_rank_in_HTML(match_string)
