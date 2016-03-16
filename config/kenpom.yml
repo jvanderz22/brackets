@@ -1,0 +1,9 @@
+development: &base
+  email: 'foo@123.com'
+  password: '123'
+
+test:
+  <<: *base
+
+production:
+  <<: *base

@@ -6,8 +6,8 @@ class Averages
   def initialize(uri)
     @uri = uri
     @data = {}
-    @email = 'jvanderz@umich.edu'
-    @password = 'wolverines123'
+    @email = KenpomConfig.config[:email]
+    @password = KenpomConfig.config[:password]
     @driver = Selenium::WebDriver.for :chrome
   end
 

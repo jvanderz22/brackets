@@ -7,8 +7,8 @@ class TeamData
     @uri = uri
     @data = {}
     @teams = JSON.parse(IO.read("#{Rails.root}/lib/team_data/bracket_info.json"))
-    @email = 'jvanderz@umich.edu'
-    @password = 'wolverines123'
+    @email = KenpomConfig.config[:email]
+    @password = KenpomConfig.config[:password]
     @driver = Selenium::WebDriver.for :chrome
   end
 
