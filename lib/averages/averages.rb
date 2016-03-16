@@ -59,7 +59,6 @@ class Averages
       sos: data_value(data_string, "Overall:", 2),
       bench_minutes: data_value(data_string, "Bench Minutes:", 2),
       experience: data_value(data_string, "Experience:", 2),
-      effective_height: data_value(data_string, "Effective Height", 2)
     }
   end
 
