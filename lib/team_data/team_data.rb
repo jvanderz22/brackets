@@ -43,6 +43,8 @@ class TeamData
         navigate_home
         navigate_to_team(team["school"])
         @data[team["school"]] = team.merge(team_data(team["school"]))
+        # ughhhh
+        @team_data_string = nil
         puts @data[team["school"]]['school']
       rescue Errno::EAGAIN
         puts "Error Rescued"
@@ -186,7 +188,7 @@ class TeamData
     if (tries -= 1).zero?
       raise "Data not found for #{match_string}"
     else
-      @team_data_string ||= @driver.page_source
+      @team_data_string = @driver.page_source
       retry
     end
   end
