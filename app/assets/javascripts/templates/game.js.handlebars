@@ -39,22 +39,15 @@
         <span class="rank"> {{experienceRank}} </span>
       </span>
     </div>
-    <div class="stat-row">
-      <span class="styled-stat-box styled-stat-box-colorless styled-stat-box-bottom">
-        <span class="stat"> {{effectiveHeight}} </span>
-        <span class="rank"> {{effectiveHeightRank}} </span>
-      </span>
-    </div>
     {{/with}}
   </div>
   <div class="col-xs-4">
-    {{#with average}}
-    <div> Offensive Effiency ({{eff}}) </div>
-    <div> Defensive Effiency ({{eff}})</div>
-    <div> Tempo ({{tempo}}) </div>
-    <div> Strength of Schedule ({{sos}}) </div>
-    <div> Experience ({{experience}}) </div>
-    <div> Effective Height ({{effective_height}}) </div>
+      {{#with average}}
+      <div> Offensive Effiency ({{eff}}) </div>
+      <div> Defensive Effiency ({{eff}})</div>
+      <div> Tempo ({{tempo}}) </div>
+      <div> Strength of Schedule ({{sos}}) </div>
+      <div> Experience ({{experience}}) </div>
     {{/with}}
   </div>
   <div class="col-xs-4">
@@ -89,17 +82,9 @@
         <span class="rank"> {{experienceRank}} </span>
       </span>
     </div>
-    <div class="stat-row">
-      <span class="styled-stat-box styled-stat-box-colorless styled-stat-box-bottom">
-        <span class="stat"> {{effectiveHeight}} </span>
-        <span class="rank"> {{effectiveHeightRank}} </span>
-      </span>
-    </div>
     {{/with}}
   </div>
 </div>
-
-
 
 <div class="row" style="text-align:center;">
   <div class="col-xs-4">
@@ -132,7 +117,11 @@
 </div>
 
 <div class="row" style="text-align:center; padding-top:10px;">
-  <div class="col-xs-4"> <button {{action pickWinner team1}}> Pick Team 1 </button></div>
+  <div class="col-xs-4">
+    <button class="btn btn-default" {{action pickWinner team1}}> Pick Team 1 </button>
+  </div>
   <div class="col-xs-4"></div>
-  <div class="col-xs-4"> <button {{action pickWinner team2 }}> Pick Team 2 </button></div>
+  <div class="col-xs-4">
+    <button class="btn btn-default" {{action pickWinner team2 }}> Pick Team 2 </button>
+  </div>
 </div>
