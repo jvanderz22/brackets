@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require ember-app-container
+ *= require_tree ./font-awesome/css/
  *= require jquery.bracket.min
  *= require navbar
  *= require game-styles

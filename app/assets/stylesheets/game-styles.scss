@@ -32,3 +32,23 @@
   font-size: x-small;
   color: blue;
 }
+
+.toggle-container {
+  padding: 5px;
+
+  .fa.active-link {
+    &:hover {
+      color: #0000EE;
+      cursor: pointer;
+    }
+  }
+
+  .fa.inactive-link {
+    color: #91908f;
+  }
+}
+
+.content-container {
+  padding-top: 20px;
+  text-align: center;
+}
