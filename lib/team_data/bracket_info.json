@@ -2,207 +2,212 @@
   {
     "pos": "1",
     "seed": "1",
-    "school": "Villanova"
+    "school": "Gonzaga"
   },
   {
     "pos": "2a",
     "seed":"16",
-    "school": "Mount St. Mary's"
+    "school": "Norfolk St."
   },
   {
     "pos": "2b",
     "seed":"16",
-    "school": "New Orleans"
+    "school": "Applachian St."
   },
   {
     "pos": "3",
     "seed": "8",
-    "school": "Wisconsin"
+    "school": "Oklahoma"
   },
   {
     "pos": "4",
     "seed": "9",
-    "school": "Virginia Tech"
+    "school": "Missouri"
   },
   {
     "pos": "5",
     "seed": "5",
-    "school": "Virginia"
+    "school": "Creighton"
   },
   {
     "pos": "6",
     "seed": "12",
-    "school": "UNC Wilmington"
+    "school": "UC Santa Barbara"
   },
   {
     "pos": "7",
     "seed": "4",
-    "school": "Florida"
+    "school": "Virginia"
   },
   {
     "pos": "8",
     "seed": "13",
-    "school": "East Tennessee St."
+    "school": "Ohio"
   },
   {
     "pos": "9",
     "seed":"6",
-    "school": "SMU"
+    "school": "USC"
   },
   {
     "pos": "10a",
     "seed": "11",
-    "school": "Providence"
+    "school": "Wichita St."
   },
   {
     "pos": "10b",
     "seed": "11",
-    "school": "USC"
+    "school": "Drake"
   },
   {
     "pos": "11",
     "seed": "3",
-    "school": "Baylor"
+    "school": "Kansas"
   },
   {
     "pos": "12",
     "seed": "14",
-    "school": "New Mexico St."
+    "school": "Eastern Washington"
   },
   {
     "pos": "13",
     "seed": "7",
-    "school": "South Carolina"
+    "school": "Oregon"
   },
   {
     "pos": "14",
     "seed": "10",
-    "school": "Marquette"
+    "school": "VCU"
   },
   {
     "pos": "15",
     "seed": "2",
-    "school": "Duke"
+    "school": "Iowa"
   },
   {
     "pos": "16",
     "seed": "15",
-    "school": "Troy"
+    "school": "Grand Canyon"
   },
   {
     "pos": "17",
     "seed": "1",
-    "school": "Gonzaga"
+    "school": "Michigan"
   },
   {
-    "pos": "18",
+    "pos": "18a",
     "seed": "16",
-    "school": "South Dakota St."
+    "school": "Mount St. Mary's"
+  },
+  {
+    "pos": "18b",
+    "seed": "16",
+    "school": "Texas Southern"
   },
   {
     "pos": "19",
     "seed": "8",
-    "school": "Northwestern"
+    "school": "LSU"
   },
   {
     "pos": "20",
     "seed": "9",
-    "school": "Vanderbilt"
+    "school": "St. Bonaventure"
   },
   {
     "pos": "21",
     "seed": "5",
-    "school": "Notre Dame"
+    "school": "Colorado"
   },
   {
     "pos": "22",
     "seed": "12",
-    "school": "Princeton"
+    "school": "Georgetown"
   },
   {
     "pos": "23",
     "seed": "4",
-    "school": "West Virginia"
+    "school": "Florida St."
   },
   {
     "pos": "24",
     "seed": "13",
-    "school": "Bucknell"
+    "school": "UNC Greensboro"
   },
   {
     "pos": "25",
     "seed": "6",
-    "school": "Maryland"
+    "school": "BYU"
   },
   {
-    "pos": "26",
+    "pos": "26a",
     "seed": "11",
-    "school": "Xavier"
+    "school": "Michigan St."
+  },
+  {
+    "pos": "26b",
+    "seed": "11",
+    "school": "UCLA"
   },
   {
     "pos": "27",
     "seed": "3",
-    "school": "Florida St."
+    "school": "Texas"
   },
   {
     "pos": "28",
     "seed": "14",
-    "school": "Florida Gulf Coast"
+    "school": "Abilene Christian"
   },
   {
     "pos": "29",
     "seed": "7",
-    "school": "Saint Mary's"
+    "school": "Connecticut"
   },
   {
     "pos": "30",
     "seed": "10",
-    "school": "VCU"
+    "school": "Maryland"
   },
   {
     "pos": "31",
     "seed": "2",
-    "school": "Arizona"
+    "school": "Alabama"
   },
   {
     "pos": "32",
     "seed": "15",
-    "school": "North Dakota"
+    "school": "Iona"
   },
   {
     "pos": "33",
     "seed": "1",
-    "school": "Kansas"
+    "school": "Baylor"
   },
   {
-    "pos": "34a",
+    "pos": "34",
     "seed": "16",
-    "school": "North Carolina Central"
-  },
-  {
-    "pos": "34b",
-    "seed": "16",
-    "school": "UC Davis"
+    "school": "Hartford"
   },
   {
     "pos": "35",
     "seed": "8",
-    "school": "Miami FL"
+    "school": "North Carolina"
   },
   {
     "pos": "36",
     "seed": "9",
-    "school": "Michigan St."
+    "school": "Wisconsin"
   },
   {
     "pos": "37",
     "seed": "5",
-    "school": "Iowa St."
+    "school": "Villanova"
   },
   {
     "pos": "38",
     "seed": "12",
-    "school": "Nevada"
+    "school": "Winthrop"
   },
   {
     "pos": "39",
@@ -212,131 +217,126 @@
   {
     "pos": "40",
     "seed": "13",
-    "school": "Vermont"
+    "school": "North Texas"
   },
   {
     "pos": "41",
     "seed": "6",
-    "school": "Creighton"
+    "school": "Texas Tech"
   },
   {
     "pos": "42",
     "seed": "11",
-    "school": "Rhode Island"
+    "school": "Utah St."
   },
   {
     "pos": "43",
     "seed": "3",
-    "school": "Oregon"
+    "school": "Arkansas"
   },
   {
     "pos": "44",
     "seed": "14",
-    "school": "Iona"
+    "school": "Colgate"
   },
   {
     "pos": "45",
     "seed": "7",
-    "school": "Michigan"
+    "school": "Florida"
   },
   {
     "pos": "46",
     "seed": "10",
-    "school": "Oklahoma St."
+    "school": "Virginia Tech"
   },
   {
     "pos": "47",
     "seed": "2",
-    "school": "Louisville"
+    "school": "Ohio St."
   },
   {
     "pos": "48",
     "seed": "15",
-    "school": "Jacksonville St."
+    "school": "Oral Roberts"
   },
   {
     "pos": "49",
     "seed": "1",
-    "school": "North Carolina"
+    "school": "Illinois"
   },
   {
     "pos": "50",
     "seed": "16",
-    "school": "Texas Southern"
+    "school": "Drexel"
   },
   {
     "pos": "51",
     "seed": "8",
-    "school": "Arkansas"
+    "school": "Loyola Chicago"
   },
   {
     "pos": "52",
     "seed": "9",
-    "school": "Seton Hall"
+    "school": "Georgia Tech"
   },
   {
     "pos": "53",
     "seed": "5",
-    "school": "Minnesota"
+    "school": "Tennessee"
   },
   {
     "pos": "54",
     "seed": "12",
-    "school": "Middle Tennessee"
+    "school": "Oregon St."
   },
   {
     "pos": "55",
     "seed": "4",
-    "school": "Butler"
+    "school": "Oklahoma St."
   },
   {
     "pos": "56",
     "seed": "13",
-    "school": "Winthrop"
+    "school": "Liberty"
   },
   {
     "pos": "57",
     "seed": "6",
-    "school": "Cincinnati"
+    "school": "San Diego St."
   },
   {
-    "pos": "58a",
+    "pos": "58",
     "seed": "11",
-    "school": "Kansas St."
-  },
-  {
-    "pos": "58b",
-    "seed": "11",
-    "school": "Wake Forest"
+    "school": "Syracuse"
   },
   {
     "pos": "59",
     "seed": "3",
-    "school": "UCLA"
+    "school": "West Virginia"
   },
   {
     "pos": "60",
     "seed": "14",
-    "school": "Kent St."
+    "school": "Morehead St."
   },
   {
     "pos": "61",
     "seed": "7",
-    "school": "Dayton"
+    "school": "Clemson"
   },
   {
     "pos": "62",
     "seed": "10",
-    "school": "Wichita St."
+    "school": "Rutgers"
   },
   {
     "pos": "63",
     "seed": "2",
-    "school": "Kentucky"
+    "school": "Houston"
   },
   {
     "pos": "64",
     "seed": "15",
-    "school": "Northern Kentucky"
+    "school": "Cleveland St."
   }
 ]
